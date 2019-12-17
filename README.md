@@ -61,7 +61,7 @@ where `func` is the function name and args represents the arguments where applic
 To run question2.py with the sample text files provided use the following command :`python question2.py f1.txt f3.txt`
 You can replace `f1.txt` and `f2.txt` with the input files you want to use.
 
-### Running the test files
+#### Running the test files
 To run the test files, use the command `python fileName` where fileName is either `question1_test.py` or `question2_test.py`.
 If you choose to suppress the output from the functions, you can use the command `python fileName -b`
 
