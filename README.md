@@ -11,7 +11,8 @@ Python 3.2 or later recommended
 `distinct_integers()` in `question1.py` contains the solution for part a of question 1.
 
 <strong>Assumptions:</strong> Since the input list contains integers between *0* to *N-1* and has a size of *N*, there is not need to check if the user inputs an empty list because, if *list_size=0* then *N-1 = -1* which contradicts the input specifications. However the statement below still accommodates for the possibility of an empty list nonetheless:
-		`if len(input_ist) <=1`
+
+`if len(input_ist) <=1`
 
 'distinct_integers()' takes in a list of integers and uses the elements as index values to go through the list. Every element that is visited is stored in a set and once a visited element is re-visited, the program stops going through the list and returns the number of elements in the set as they represent the number of distinct integers that the random generator would have produced.
 
