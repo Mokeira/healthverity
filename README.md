@@ -22,6 +22,8 @@ To improve on the implementation of part a, this function compares elements star
 
 This implementation uses O(1) auxiliary space.
 
+(Note: if you run the tests provided, you will see that `distinct_integers_modified()` fails one of the tests therefore, the implementation would need some improvement)
+
 ## Question 2
 #### Part a
 
@@ -39,4 +41,28 @@ Once the files are validated, `compare_files()` checks their contents. The words
 #### Part b
 My implementation in part a breaks the files into chunks while working with the data but if the files being compared were very large, I would use a module, for example, filecmp, that is created to compare files. Since natural language processing also tends to deal with large files, I might look into how they compare their data and maybe get something that can handle large files.
 
+## Testing
+`question1_test.py` and `question2_test.py` contain test cases for question 1 and 2 respectively.
 
+As mentioned above, `distinct_integers_modified()` fails one of the tests if given more time, this can be improved on.
+
+## Running from the terminal
+#### Setup
+To run this project:
+-   [clone](https://help.github.com/en/github/using-git/which-remote-url-should-i-use)  the repository or  [download](https://github.com/Mokeira/healthverity/archive/master.zip)  the zipped project.
+-   Ensure you have Python installed (Python3 recommended)
+
+Once you are done setting up the files, navigate to the project directory.
+
+#### Running question1.py
+To run question1.py use the following command:
+	` python -c 'from question1 import func; print(func(args))'`
+where `func` is the function name and args represents the arguments where applicable
+
+#### Running question2.py
+To run question2.py with the sample text files provided use the following command :`python question2.py f1.txt f3.txt`
+You can replace `f1.txt` and `f2.txt` with the input files you want to use.
+
+### Running the test files
+To run the test files, use the command `python fileName` where fileName is either `question1_test.py` or `question2_test.py`.
+If you choose to suppress the output from the functions, you can use the command `python fileName -b`
