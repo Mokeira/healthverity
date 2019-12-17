@@ -1,7 +1,7 @@
 # HealthVerity Assessment
 This repository contains my submission for the software engineering assessment at HealthVerity.
 
-I completed questions 1 and 2 and the total time spent was about 2 hours.
+I completed questions 1 and 2 and the total time spent was about 2 hours (not including the time spent on creating the test files and README).
 
 ## Dependencies
 Python 3.2 or later recommended
@@ -14,7 +14,7 @@ Python 3.2 or later recommended
 
 `if len(input_ist) <=1`
 
-'distinct_integers()' takes in a list of integers and uses the elements as index values to go through the list. Every element that is visited is stored in a set and once a visited element is re-visited, the program stops going through the list and returns the number of elements in the set as they represent the number of distinct integers that the random generator would have produced.
+`distinct_integers()` takes in a list of integers and uses the elements as index values to go through the list. Every element that is visited is stored in a set and once a visited element is re-visited, the program stops going through the list and returns the number of elements in the set as they represent the number of distinct integers that the random generator would have produced.
 
 #### Part b
 `distinct_integers_modified()` in `question1.py` contains the solution for part b of question 1.
@@ -27,11 +27,6 @@ This implementation uses O(1) auxiliary space.
 
 ## Question 2
 #### Part a
-
-Write a program that reads in the names of two files from STDIN and outputs the number of
-strings they have in common to STDOUT. Each file contains 1 million strings of 32 characters,
-1 per line.
-
 `question2.py` contains the solution for part a of question 2.
 The program reads in 2 files, compares their contents and returns the number of strings found in both files. The specifications of the contents of the files are provided in the assessment document.
 
@@ -42,10 +37,12 @@ Once the files are validated, `compare_files()` checks their contents. The words
 #### Part b
 My implementation in part a breaks the files into chunks while working with the data but if the files being compared were very large, I would use a module, for example, filecmp, that is created to compare files. Since natural language processing also tends to deal with large files, I might look into how they compare their data and maybe get something that can handle large files.
 
+<strong>*f1.txt and f3.txt have been provided as sample files. The 2 files have 10,000 lines of text each and 12 different lines of text between them*</strong>
+
 ## Testing
 `question1_test.py` and `question2_test.py` contain test cases for question 1 and 2 respectively.
 
-As mentioned above, `distinct_integers_modified()` fails one of the tests if given more time, this can be improved on.
+As mentioned above, `distinct_integers_modified()` fails one of the tests. If given more time, this can be improved on.
 
 ## Running from the terminal
 #### Setup
@@ -67,3 +64,5 @@ You can replace `f1.txt` and `f2.txt` with the input files you want to use.
 ### Running the test files
 To run the test files, use the command `python fileName` where fileName is either `question1_test.py` or `question2_test.py`.
 If you choose to suppress the output from the functions, you can use the command `python fileName -b`
+
+*Please note that there are various ways to run the programs and the above steps only demonstrate one of the ways you can interact with the programs via the terminal.*
